@@ -20,7 +20,7 @@ void rungeKutta( float &q, float &i, float dt, float L , float C , float R) {
   q= q + (dt/6)*(k1_q + 2*k2_q + 2*k3_q + k4_q);
   i= i + (dt/6)*(k1_i + 2*k2_i + 2*k3_i + k4_i);
 }
-void simulateLCROscilllation(const char*filename , float L , float C , float R){
+void simulateLCROscillation(const char*filename , float L , float C , float R){
  const float dt = 0.1; // time step
     const int steps = 250;   // number of steps
 
